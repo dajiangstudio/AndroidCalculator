@@ -1,2 +1,2 @@
 # AndroidCalculator
-This is a simaple Calculator for Android.
+This is a simple Calculator for Android.
