@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btClear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/symbol_clear"
+            android:onClick="enterClear"/>
+
+        <TextView
+            android:id="@+id/displayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:text="0"
+            android:textSize="50sp"
+             />
+    </LinearLayout>
+
+    <!--first line-->
+    <LinearLayout
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+        <Button
+            android:id="@+id/btNum7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_seven" />
+
+        <Button
+            android:id="@+id/btNum8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_eight" />
+
+        <Button
+            android:id="@+id/btNum9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_nine" />
+
+        <Button
+            android:id="@+id/btDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterOperation"
+            android:text="@string/symbol_divide" />
+    </LinearLayout>
+    <!--second line-->
+    <LinearLayout
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+        <Button
+            android:id="@+id/btNum4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_four" />
+
+        <Button
+            android:id="@+id/btNum5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_five" />
+
+        <Button
+            android:id="@+id/btNum6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_six" />
+
+        <Button
+            android:id="@+id/btMul"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterOperation"
+            android:text="@string/symbol_multiply" />
+    </LinearLayout>
+    <!--third line-->
+    <LinearLayout
+        android:id="@+id/thirdLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+        <Button
+            android:id="@+id/btNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_one" />
+
+        <Button
+            android:id="@+id/btNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_two" />
+
+        <Button
+            android:id="@+id/btNum3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_three" />
+
+        <Button
+            android:id="@+id/btSub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterOperation"
+            android:text="@string/symbol_substract" />
+    </LinearLayout>
+    <!--fourth line-->
+    <LinearLayout
+        android:id="@+id/fourthLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+        <Button
+            android:id="@+id/btNum0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/number_zero" />
+
+        <Button
+            android:id="@+id/btDot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterDigit"
+            android:text="@string/symbol_dot" />
+
+        <Button
+            android:id="@+id/btEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterEquals"
+            android:text="@string/symbol_equal" />
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="enterOperation"
+            android:text="@string/symbol_add" />
+    </LinearLayout>
+</LinearLayout>
